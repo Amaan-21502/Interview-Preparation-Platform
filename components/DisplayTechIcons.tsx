@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { getTechLogos } from '../lib/actions/utils';
-import { cn } from "../lib/actions/utils";
+import { getTechLogos } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 const DisplayTechIcons = async ({ techStack }: TechIconProps) => {
   const techIcons = await getTechLogos(techStack);
